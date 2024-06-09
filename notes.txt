@@ -1,0 +1,86 @@
+backend ki files ko backend ke folder ke andar rakhna hai 
+frontend ki files ko client ke folder ke andar rakhenge.
+
+yaha client humara reactjs hoga 
+
+
+html/css javascript se bani files simple design hai 
+un design ko properly structure wise arrange karne ka kaam karti hai reactjs 
+
+
+system design: 
+agar sari files ek jagah hai to complexity increase karti hai. jasie ki html mai more than one div hum banate hai unme contents sirf alag hoti hai lekin design same rehta hai. 
+css bhi usi file mai hi hoti hai 
+javascript bhi usi file mai hi hoti hai 
+iss tarah ke architecture ko monolitihic architecture bolte hai. 
+
+to aaise mei hum sirf api ka use karke differrent content ko waha par render karwayenge. 
+
+render==show karana 
+
+reactjs ==> model organisation discipline 
+
+sarein html ko component wise distribute karne wala hai .
+
+system architecture
+1.monolitihic 2. distributive
+
+
+distribute architecture  mai discipline maintain hogi. component wise distribute kar dena. 
+components ke bich mai linking karne ke liye file module ko padhte hai.
+
+commonjs const variablename = require(packagename) ejs 
+modulejs import variablename from 'packagename' mjs
+
+
+react ===>react ko introduce kiya gaya tha SPA single page application designing ke liye blog website, portfolio website
+    lekin baad mai yeh dekha gaya ki there exists many multiple page application
+
+HTML index.html contact.html blog.html main.html 
+datastructure ko follow karegi 
+document object model
+object(key:value)
+
+each object has differrent defination and belongs to different class
+on observing we notice that there exist header then body then different sections  and divs and then at the last there exists the footer.
+
+so that means it follows a pattern and in some order that order is somehow resemble to tree datastructure from dsa.
+
+object which we are talking about is belongs to tree class.
+
+tree has a parent and left child and right child. 
+the node will be same only the content will differ.
+
+so the concept followed in building tree datastructure is recursion.
+
+time complexity |  space complexity
+o(1)                 2^n when it is binaray tree 
+m-ary tree     m^n  highest space complexity
+
+complie time memory when ever we are creating a html file it consumes certain amount of space that has space complexity of m^n.
+
+dynamic memory allocation : each page will load on runtime(design will happen on runtime in browser)
+
+pointer 
+
+int a =10
+int *ptr = &a;
+
+now ptr is responsible to change the content of that same memory location 
+where previously 10 was stored.
+
+reconcillation: repaint redesign karna this concept is called as re-rendering 
+or reconcillation in react.
+
+there will be only one index.html and it will change the content of that page by its virtual dom. 
+
+int a;
+int b;
+a=b;this is called as deep copy 
+
+int a ;
+int b;
+b=&a; shallow copy
+b has reference of a 
+
+const root = react.render()
